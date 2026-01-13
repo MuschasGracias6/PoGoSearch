@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+https://muschasgrac6.github.io/PoGoSearch/Datenschutz.html<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerklärung</title>
+    <title>Datenschutzerklärung / Privacy Policy</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,123 +19,278 @@
         section {
             margin: 20px 0;
         }
+        .language-toggle {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .language-toggle button {
+            padding: 8px 15px;
+            margin: 0 5px;
+            background-color: #0366d6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .language-toggle button.active {
+            background-color: #1f6feb;
+        }
+        .language-toggle button:hover {
+            background-color: #1f6feb;
+        }
+        .de { display: block; }
+        .en { display: none; }
     </style>
+    <script>
+        function toggleLanguage(lang) {
+            const deContent = document.querySelectorAll('.de');
+            const enContent = document.querySelectorAll('.en');
+            const deBtns = document.querySelectorAll('[data-lang="de"]');
+            const enBtns = document.querySelectorAll('[data-lang="en"]');
+            
+            if (lang === 'de') {
+                deContent.forEach(el => el.style.display = 'block');
+                enContent.forEach(el => el.style.display = 'none');
+                deBtns.forEach(btn => btn.classList.add('active'));
+                enBtns.forEach(btn => btn.classList.remove('active'));
+            } else {
+                deContent.forEach(el => el.style.display = 'none');
+                enContent.forEach(el => el.style.display = 'block');
+                deBtns.forEach(btn => btn.classList.remove('active'));
+                enBtns.forEach(btn => btn.classList.add('active'));
+            }
+        }
+    </script>
 </head>
 <body>
-    <h1>Datenschutzerklärung</h1>
-    
-    <section>
-        <h2>1. Datenschutz auf einen Blick</h2>
-        <p>
-            PogoSearch ist eine private Android-App zur Erstellung von Suchbefehlen für Pokémon GO. 
-            Die App verarbeitet keine personenbezogenen Daten auf Servern und benötigt keine Internetverbindung. 
-            Alle Daten bleiben auf Ihrem Gerät.
-        </p>
-    </section>
-    
-    <section>
-        <h2>2. Allgemeine Hinweise</h2>
-        <p>
-            PogoSearch ist eine private, nicht-kommerzielle Android-Anwendung ohne Gewinnabsicht. 
-            Diese Datenschutzerklärung erklärt, wie die App mit Ihren Daten umgeht.
-        </p>
-    </section>
-    
-    <section>
-        <h2>3. Datenverarbeitung in der App</h2>
-        <p>
-            PogoSearch verarbeitet keine personenbezogenen Daten. Die App funktioniert vollständig offline und:
-        </p>
-        <ul>
-            <li>Erstellt Suchbefehle für Pokémon GO lokal auf Ihrem Gerät</li>
-            <li>Speichert Ihre erstellten Suchbefehle lokal auf Ihrem Gerät (optional)</li>
-            <li>Benötigt keine Internetverbindung</li>
-            <li>Versendet keine Daten an Server oder externe Dienste</li>
-            <li>Erfordert keine Benutzerkonten oder Logins</li>
-            <li>Sammelt keine Analytics oder Tracking-Daten</li>
-        </ul>
-    </section>
-    
-    <section>
-        <h2>4. Lokale Datenspeicherung</h2>
-        <p>
-            Die von Ihnen erstellten und gespeicherten Suchbefehle werden ausschließlich lokal auf Ihrem Android-Gerät gespeichert. 
-            Sie haben jederzeit die Kontrolle über diese Daten und können diese jederzeit löschen.
-        </p>
-    </section>
-    
-    <section>
-        <h2>5. Externe Dienstleister und APIs</h2>
-        <p>
-            PogoSearch verwendet keine externen Dienstleister zur Datenverarbeitung und verbindet sich mit keinen APIs. 
-            Alle Funktionen laufen vollständig auf Ihrem Gerät ab.
-        </p>
-    </section>
-    
-    <section>
-        <h2>6. Sicherheit</h2>
-        <p>
-            Da PogoSearch vollständig offline funktioniert und keine Daten versendet, gibt es keine 
-            Übertragungsrisiken. Ihre Daten sind vollständig in Ihrer Hand und auf Ihrem Gerät geschützt.
-        </p>
-    </section>
-    
-    <section>
-        <h2>7. Ihre Rechte</h2>
-        <p>
-            Da PogoSearch keine personenbezogenen Daten verarbeitet oder speichert, haben Sie keine 
-            Datenschutzrechte gemäß DSGVO, die geltend gemacht werden könnten. Ihre Daten sind ausschließlich 
-            auf Ihrem Gerät gespeichert und unterliegen Ihrer vollständigen Kontrolle.
-        </p>
-    </section>
-    
-    <section>
-        <h2>8. Kontakt und Fragen</h2>
-        <p>
-            Fragen zur Datenschutzerklärung oder zur App können Sie an folgende E-Mail-Adresse richten:<br>
-            <strong>E-Mail:</strong> adrian.behling@gmail.com
-        </p>
-    </section>
-    
-    <section>
-        <h2>9. Kontaktaufnahme per E-Mail</h2>
-        <h3>Support-Anfragen und Feedback</h3>
-        <p>
-            Wenn Sie uns per E-Mail eine Support-Anfrage oder Feedback senden, werden die von Ihnen gemachten Angaben 
-            (E-Mail-Adresse, Name sowie der Inhalt der Nachricht) zum Zweck der Bearbeitung Ihrer Anfrage und für den 
-            Fall von Anschlussfragen bei uns gespeichert.
-        </p>
-        <p>
-            Zusätzlich werden beim Erstellen der E-Mail innerhalb der App automatisch die folgenden technischen 
-            Informationen in den Nachrichtentext eingefügt:
-        </p>
-        <ul>
-            <li><strong>Gerätemodell und Hersteller</strong> (z. B. Samsung Galaxy S23)</li>
-            <li><strong>Version des Betriebssystems</strong> (Android-Version)</li>
-            <li><strong>Installierte Version der PoGoSearch-App</strong></li>
-        </ul>
-        <p>
-            Diese Daten dienen ausschließlich der technischen Analyse im Falle von Fehlermeldungen, um Probleme auf 
-            spezifischen Hardware- oder Software-Konfigurationen besser nachvollziehen und beheben zu können.
-        </p>
-        <p>
-            <strong>Transparenz und Kontrolle:</strong> Da diese Informationen direkt in den Text Ihrer E-Mail 
-            eingefügt werden, sind sie für Sie vor dem Absenden vollständig einsehbar. Sie haben jederzeit die 
-            Möglichkeit, diese technischen Zeilen manuell aus dem Textfeld zu löschen, bevor Sie die E-Mail über 
-            Ihr Standard-E-Mail-Programm versenden.
-        </p>
-        <p>
-            <strong>Rechtsgrundlage:</strong> Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 
-            lit. f DSGVO. Unser berechtigtes Interesse besteht in der Beantwortung Ihres Anliegens sowie der 
-            Gewährleistung der Stabilität und Fehlerfreiheit der App.
-        </p>
-    </section>
-    
-    <section>
-        <p>
-            <a href="Impressum.html">Zurück zum Impressum</a>
-        </p>
-    </section>
+    <div class="language-toggle">
+        <button data-lang="de" class="active" onclick="toggleLanguage('de')">Deutsch</button>
+        <button data-lang="en" onclick="toggleLanguage('en')">English</button>
+    </div>
+
+    <!-- DEUTSCH -->
+    <div class="de">
+        <h1>Datenschutzerklärung</h1>
+        
+        <section>
+            <h2>1. Datenschutz auf einen Blick</h2>
+            <p>
+                PogoSearch ist eine private Android-App zur Erstellung von Suchbefehlen für Pokémon GO. 
+                Die App verarbeitet keine personenbezogenen Daten auf Servern und benötigt keine Internetverbindung. 
+                Alle Daten bleiben auf Ihrem Gerät.
+            </p>
+        </section>
+        
+        <section>
+            <h2>2. Allgemeine Hinweise</h2>
+            <p>
+                PogoSearch ist eine private, nicht-kommerzielle Android-Anwendung ohne Gewinnabsicht. 
+                Diese Datenschutzerklärung erklärt, wie die App mit Ihren Daten umgeht.
+            </p>
+        </section>
+        
+        <section>
+            <h2>3. Datenverarbeitung in der App</h2>
+            <p>
+                PogoSearch verarbeitet keine personenbezogenen Daten. Die App funktioniert vollständig offline und:
+            </p>
+            <ul>
+                <li>Erstellt Suchbefehle für Pokémon GO lokal auf Ihrem Gerät</li>
+                <li>Speichert Ihre erstellten Suchbefehle lokal auf Ihrem Gerät (optional)</li>
+                <li>Benötigt keine Internetverbindung</li>
+                <li>Versendet keine Daten an Server oder externe Dienste</li>
+                <li>Erfordert keine Benutzerkonten oder Logins</li>
+                <li>Sammelt keine Analytics oder Tracking-Daten</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>4. Lokale Datenspeicherung</h2>
+            <p>
+                Die von Ihnen erstellten und gespeicherten Suchbefehle werden ausschließlich lokal auf Ihrem Android-Gerät gespeichert. 
+                Sie haben jederzeit die Kontrolle über diese Daten und können diese jederzeit löschen.
+            </p>
+        </section>
+        
+        <section>
+            <h2>5. Externe Dienstleister und APIs</h2>
+            <p>
+                PogoSearch verwendet keine externen Dienstleister zur Datenverarbeitung und verbindet sich mit keinen APIs. 
+                Alle Funktionen laufen vollständig auf Ihrem Gerät ab.
+            </p>
+        </section>
+        
+        <section>
+            <h2>6. Sicherheit</h2>
+            <p>
+                Da PogoSearch vollständig offline funktioniert und keine Daten versendet, gibt es keine 
+                Übertragungsrisiken. Ihre Daten sind vollständig in Ihrer Hand und auf Ihrem Gerät geschützt.
+            </p>
+        </section>
+        
+        <section>
+            <h2>7. Ihre Rechte</h2>
+            <p>
+                Da PogoSearch keine personenbezogenen Daten verarbeitet oder speichert, haben Sie keine 
+                Datenschutzrechte gemäß DSGVO, die geltend gemacht werden könnten. Ihre Daten sind ausschließlich 
+                auf Ihrem Gerät gespeichert und unterliegen Ihrer vollständigen Kontrolle.
+            </p>
+        </section>
+        
+        <section>
+            <h2>8. Kontakt und Fragen</h2>
+            <p>
+                Fragen zur Datenschutzerklärung oder zur App können Sie an folgende E-Mail-Adresse richten:<br>
+                <strong>E-Mail:</strong> adrian.behling@gmail.com
+            </p>
+        </section>
+        
+        <section>
+            <h2>9. Kontaktaufnahme per E-Mail</h2>
+            <h3>Support-Anfragen und Feedback</h3>
+            <p>
+                Wenn Sie uns per E-Mail eine Support-Anfrage oder Feedback senden, werden die von Ihnen gemachten Angaben 
+                (E-Mail-Adresse, Name sowie der Inhalt der Nachricht) zum Zweck der Bearbeitung Ihrer Anfrage und für den 
+                Fall von Anschlussfragen bei uns gespeichert.
+            </p>
+            <p>
+                Zusätzlich werden beim Erstellen der E-Mail innerhalb der App automatisch die folgenden technischen 
+                Informationen in den Nachrichtentext eingefügt:
+            </p>
+            <ul>
+                <li><strong>Gerätemodell und Hersteller</strong> (z. B. Samsung Galaxy S23)</li>
+                <li><strong>Version des Betriebssystems</strong> (Android-Version)</li>
+                <li><strong>Installierte Version der PoGoSearch-App</strong></li>
+            </ul>
+            <p>
+                Diese Daten dienen ausschließlich der technischen Analyse im Falle von Fehlermeldungen, um Probleme auf 
+                spezifischen Hardware- oder Software-Konfigurationen besser nachvollziehen und beheben zu können.
+            </p>
+            <p>
+                <strong>Transparenz und Kontrolle:</strong> Da diese Informationen direkt in den Text Ihrer E-Mail 
+                eingefügt werden, sind sie für Sie vor dem Absenden vollständig einsehbar. Sie haben jederzeit die 
+                Möglichkeit, diese technischen Zeilen manuell aus dem Textfeld zu löschen, bevor Sie die E-Mail über 
+                Ihr Standard-E-Mail-Programm versenden.
+            </p>
+            <p>
+                <strong>Rechtsgrundlage:</strong> Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 
+                lit. f DSGVO. Unser berechtigtes Interesse besteht in der Beantwortung Ihres Anliegens sowie der 
+                Gewährleistung der Stabilität und Fehlerfreiheit der App.
+            </p>
+        </section>
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="en">
+        <h1>Privacy Policy</h1>
+        
+        <section>
+            <h2>1. Privacy at a Glance</h2>
+            <p>
+                PogoSearch is a private Android app for creating search commands for Pokémon GO. 
+                The app does not process personal data on servers and does not require an internet connection. 
+                All data remains on your device.
+            </p>
+        </section>
+        
+        <section>
+            <h2>2. General Information</h2>
+            <p>
+                PogoSearch is a private, non-commercial Android application developed without profit intent. 
+                This privacy policy explains how the app handles your data.
+            </p>
+        </section>
+        
+        <section>
+            <h2>3. Data Processing in the App</h2>
+            <p>
+                PogoSearch does not process personal data. The app works completely offline and:
+            </p>
+            <ul>
+                <li>Creates search commands for Pokémon GO locally on your device</li>
+                <li>Stores your created search commands locally on your device (optional)</li>
+                <li>Requires no internet connection</li>
+                <li>Sends no data to servers or external services</li>
+                <li>Requires no user accounts or logins</li>
+                <li>Collects no analytics or tracking data</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>4. Local Data Storage</h2>
+            <p>
+                The search commands you create and save are stored exclusively locally on your Android device. 
+                You have full control over this data at all times and can delete it whenever you wish.
+            </p>
+        </section>
+        
+        <section>
+            <h2>5. External Service Providers and APIs</h2>
+            <p>
+                PogoSearch uses no external service providers for data processing and does not connect to any APIs. 
+                All functions run completely on your device.
+            </p>
+        </section>
+        
+        <section>
+            <h2>6. Security</h2>
+            <p>
+                Since PogoSearch works completely offline and sends no data, there are no transmission risks. 
+                Your data is completely in your hands and protected on your device.
+            </p>
+        </section>
+        
+        <section>
+            <h2>7. Your Rights</h2>
+            <p>
+                Since PogoSearch does not process or store personal data, you have no data protection rights 
+                under the GDPR that could be asserted. Your data is stored exclusively on your device and 
+                remains under your complete control.
+            </p>
+        </section>
+        
+        <section>
+            <h2>8. Contact and Questions</h2>
+            <p>
+                If you have questions about this privacy policy or the app, you can contact us at the following email address:<br>
+                <strong>Email:</strong> adrian.behling@gmail.com
+            </p>
+        </section>
+        
+        <section>
+            <h2>9. Contact by Email</h2>
+            <h3>Support Requests and Feedback</h3>
+            <p>
+                If you send us a support request or feedback by email, the information you provide 
+                (email address, name, and message content) will be stored for the purpose of processing your request 
+                and for any follow-up questions.
+            </p>
+            <p>
+                Additionally, when creating an email within the app, the following technical information 
+                is automatically inserted into the message text:
+            </p>
+            <ul>
+                <li><strong>Device model and manufacturer</strong> (e.g., Samsung Galaxy S23)</li>
+                <li><strong>Operating system version</strong> (Android version)</li>
+                <li><strong>Installed version of the PoGoSearch app</strong></li>
+            </ul>
+            <p>
+                This data is used exclusively for technical analysis in case of error reports, to better 
+                understand and fix problems on specific hardware or software configurations.
+            </p>
+            <p>
+                <strong>Transparency and Control:</strong> Since this information is inserted directly into your 
+                email text, it is completely visible to you before sending. You always have the ability to manually 
+                delete these technical lines from the text field before sending the email via your standard email program.
+            </p>
+            <p>
+                <strong>Legal Basis:</strong> The processing of this data is based on Article 6(1)(f) of the GDPR. 
+                Our legitimate interest is in answering your inquiry and ensuring the stability and error-free 
+                operation of the app.
+            </p>
+        </section>
+    </div>
     
 </body>
 </html>
